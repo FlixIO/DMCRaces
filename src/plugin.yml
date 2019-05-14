@@ -1,0 +1,11 @@
+name: DMCRaces
+author: Flix Kei
+version: 1.0
+main: io.flixion.races.Races
+description: A private project completed for client Naxxos#4932
+softdepend: [SavageFactions, PermissionsEx]
+
+commands:
+  race:
+    usage: /<command>
+    description: Access the race GUI

@@ -1,0 +1,38 @@
+raceSwitchCooldown: 30
+castItemData:
+  itemType: STICK
+  itemName: '&aCast wand'
+  itemData: 0
+  matchItemEnum: true
+  itemLore:
+    - 'Lore line 1'
+    - 'Lore line 2'
+abilities:
+  stoneform:
+    effectTime: 5
+    cooldownTime: 10
+  disperse:
+    cooldownTime: 10
+    effectTime: 5
+  canniblism:
+    cooldownTime: 10
+    effectTime: 8
+    regenEffectLevel: 2
+  sting:
+    cooldownTime: 10
+    effectTime: 5
+  traveller:
+    cooldownTime: 10
+    immobilizeTime: 5
+    teleportDistance: 3
+  demonfireball:
+    fireballDamage: 10
+    castInflictedDamage: 5
+  angelicgift:
+    cooldownTime: 10
+    amountToHeal: 5
+    effectRadius: 10
+    slownessLevel: 1
+    weaknessLevel: 1
+    effectTime: 5
+    

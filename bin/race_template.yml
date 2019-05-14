@@ -1,0 +1,58 @@
+### raceName MUST be unique or there will be errors!
+### Unlock items must also be unique and must be exact in lore and displayname
+raceName: '&aRace'
+raceIcon:
+  materialEnum: DIAMOND
+  byteData: 0
+  lore:
+    - '&aRight Click to Unlock'
+    - '&aLeft Click to Equip'
+unlockItem:
+  materialEnum: GOLD_INGOT
+  amount: 64
+  byteData: 0
+  matchByEnum: true
+  name: '&aGold Ingot'
+  lore:
+    - 'Line one of the lore'
+    - 'Line two of the lore'
+    
+### This defines whether the created race is a Parent race or a child (upgrade) race
+### If you want this to be a child race set isParentRace to false
+### The format for listing the child races is as follows: RaceName#Upgrade Rank(2-4), since Rank 1 is the parent race
+### Cross race children are allowed but I assume you wouldn't want that anyway
+raceHeirachy:
+  isParentRace: true
+  childRaces:
+    - Human 2#2
+    - Human 3#3
+    
+passive:
+  hasHunger: false
+  wolfAggression: false
+  resistKnockback: false
+  ### Aversion Damages are all per second
+  waterAversionDamage: 2
+  fireAversionDamage: 2
+  ### Effect length in seconds
+  fireballVulernability:
+    effectLength: 10
+  ### Formatting => <PotionEffectTypeENUM>#<Tier>#<ShowParticles>
+  ### These effects are given to the player when this race is equipped
+  nativePotionEffects:
+    - SPEED#2#false
+  ### Permissions to be added when using the race, use - to negate a permission
+  permissions:
+    - essentials.fly
+    - essentials.fly.other
+  ### List of mobs enums that will not attack the player
+  hostileMobAggression:
+    - ZOMBIE
+    - SKELETON
+  damageBoost:
+    ### Chance from 0-100%
+    ### Additional damage to apply to the player
+    chance: 50
+    damage: 3
+  
+    
